@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <p1 id="p1"></p1>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <h1 style="background-color: aqua;">Addition = +</h1>
+    <h1 style="background-color: brown;">Extraction = -</h1>
+    <h1 style="background-color: blueviolet;">Division  = /</h1>
+    <h1 style="background-color: blue;">Multiplication  = *</h1>
+    <h3>You can use like this = 3+3 | 3-3 | 3/3 | 3*3</h3>
+    <input type="text" id="num" style="color: black; background-color: yellow; font-size: large;">
+    <button type="button" id="num2" style="background-color: black; color: yellow;" onclick="num2()">Calculate</button><p id=""myP></p>
+  </head>
+  <body>
+    <script>
+function num2() {
+  var x = eval(document.getElementById("num").value);
+  document.getElementById("p1").innerHTML = ("Result = " + x);
+}
+ 
+     
+    </script>
+  </body>
+</html>
